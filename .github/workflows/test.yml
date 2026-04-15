@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Build and run test suite
         run: docker compose up --build --abort-on-container-exit --exit-code-from tests

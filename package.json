@@ -7,6 +7,13 @@
     "test": "cucumber-js",
     "test:en": "cucumber-js --profile en",
     "test:id": "cucumber-js --profile id",
+    "test:integration": "cucumber-js --profile integration",
+    "test:api-health-en": "cucumber-js --profile api-health-en",
+    "test:api-health-id": "cucumber-js --profile api-health-id",
+    "test:users-en": "cucumber-js --profile users-en",
+    "test:users-id": "cucumber-js --profile users-id",
+    "test:products-en": "cucumber-js --profile products-en",
+    "test:products-id": "cucumber-js --profile products-id",
     "start": "node server.js"
   },
   "dependencies": {

@@ -1,0 +1,3 @@
+[submodule "demo-rest"]
+	path = demo-rest
+	url = https://github.com/adevsha/demo-rest.git

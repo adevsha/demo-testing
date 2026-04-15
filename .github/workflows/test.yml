@@ -1,0 +1,16 @@
+name: Cucumber Test Suite
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run Cucumber Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build and run test suite
+        run: docker compose up --build --abort-on-container-exit --exit-code-from tests
